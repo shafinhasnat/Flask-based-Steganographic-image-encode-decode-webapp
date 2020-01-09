@@ -32,7 +32,6 @@ def encode():
 		pwd, img = enc_alg(save_image(pic))
 		pd_ret = str(pwd)
 		im_ret = str(img)
-		str(pwd)
 		return render_template('dl_page.html', pd_ret=pd_ret, im_ret=im_ret)
 	else:
 		print('not done')
