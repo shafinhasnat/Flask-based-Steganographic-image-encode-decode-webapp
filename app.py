@@ -37,6 +37,9 @@ def encode():
 		print('not done')
 	return render_template('encode.html', title=title, form=form)
 
+@app.route('/')
+def home():
+	return render_template('index.html')
 
 
 if __name__ == '__main__':
