@@ -10,10 +10,11 @@ def original_text():
 	txt = bin(int.from_bytes(form.text.data.encode(), 'big')).replace('b','')
 	return txt
 def enc_alg(im):
+	print('--***********564656*-----------**********')
 	a = []
 	img = cv2.imread(im)
-	new_name = im.split('\\')[-1].replace('org','enc')
-	# print(im,new_name)
+	new_name = im.split('/')[-1].replace('org','enc')
+	print('**************************',new_name)
 	row,col,ch=img.shape
 	flat_img=img.flatten()
 	text = original_text()
@@ -29,8 +30,9 @@ def enc_alg(im):
 	encoded_img_flat=np.subtract(flat_img,encoded_txt)
 	encoded_img=np.reshape(encoded_img_flat,(row,col,ch))
 	root = os.path.dirname(os.path.abspath(__file__))
-	enc_path = root+"\static\enc_pic\\"+new_name
-	# print(enc_path)
+	print('**************************',root)
+	enc_path = "static/enc_pic\\"+new_name
+	print(enc_path)
 
 	cv2.imwrite(enc_path, encoded_img)
 	# cv2.imshow('image',img)
