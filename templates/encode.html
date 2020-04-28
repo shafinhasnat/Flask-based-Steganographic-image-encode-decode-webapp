@@ -22,7 +22,7 @@
 			    <label for="inputAddress2">Text:</label>
 			    <input type="text" class="form-control "> -->
 			    	{{ form.text.label() }}
-			    	{{ form.text(class='form-control', placeholder='text') }}
+			    	{{ form.text(class='form-control', placeholder='text', rows="5") }}
 			    	{% if form.text.errors %}
 			    		<div class="text-danger">
 				    		{% for error in form.text.errors %}
