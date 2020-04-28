@@ -17,6 +17,6 @@ six==1.12.0
 SQLAlchemy==1.3.10
 Werkzeug==0.16.0
 WTForms==2.2.1
-opencv-python==3.4.2.16
+opencv-python-headless
 psycopg2==2.8.3
 
