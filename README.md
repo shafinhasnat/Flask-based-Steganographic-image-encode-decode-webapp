@@ -1,6 +1,6 @@
 # Intro
 
-this project is the web version of this project- [
+Try this fun project [here](https://xelsteg.herokuapp.com). This project is the web version of this project- [
 Simple-Image-steganography-System](https://github.com/shafinhasnat/Simple-Image-steganography-System.git) (Under active development)
 
 
