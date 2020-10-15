@@ -1,6 +1,6 @@
 # Intro
 
-This project basically takes text input and embed it into a PNG image, and retrieve the text from the image. The text encoding into the image is lossless. Try this fun project [here](https://xelsteg.herokuapp.com) check out in youtube- [video tutorial](https://youtu.be/K04xY1empOA). This project is the web version of this project- [
+This project basically takes text input and embed it into a PNG image, and retrieve the text from the image. The text encoding into the image is lossless. Try this fun project [here](https://xelsteg.herokuapp.com), check out in youtube- [video tutorial](https://youtu.be/K04xY1empOA). This project is the web version of this project- [
 Simple-Image-steganography-System](https://github.com/shafinhasnat/Simple-Image-steganography-System.git) (Under active development)
 
 
