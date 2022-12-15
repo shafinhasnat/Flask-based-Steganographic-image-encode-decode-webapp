@@ -34,12 +34,10 @@ def encode():
 			pd_ret = str(pwd)
 			im_ret = str(img).split('/')[-1]
 
-			print('***************',str(img).split('/')[-1
-				])
+			print('***************',str(img).split('/')[-1])
 			return render_template('dl_page.html', pd_ret=pd_ret, im_ret=im_ret)
 		except:
 			return render_template('retrieve_msg.html', message='error')
-			pass
 	else:
 		print('not done')
 	return render_template('encode.html', title=title, form=form)
