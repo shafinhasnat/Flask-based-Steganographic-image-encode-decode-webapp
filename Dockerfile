@@ -5,6 +5,8 @@ RUN apt-get -y update
 RUN apt-get -y install python3.6 python3-pip
 RUN apt-get install -y libsm6 libxext6 libxrender-dev
 RUN apt-get -y install libpq-dev
+COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
+COPY . .
 EXPOSE 8080
 CMD gunicorn --bind 0.0.0.0:8080 app:app -w 4
